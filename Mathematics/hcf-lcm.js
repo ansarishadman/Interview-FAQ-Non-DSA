@@ -1,11 +1,13 @@
-findHCF(36, 24);
-findLCM(36, 24);
+// Cases valid for positive integer values
 
-function findHCF(n1, n2) {
+findHCF(36, 12, "HCF");
+findLCM(36, 12, "LCM");
+
+function findHCF(n1, n2, operation) {
     let dividend = n1;
     let divisor = n2;
     let remainder = 1;
-    let hcfValue;
+    let hcfValue = divisor;
 
     if (dividend === 0 || divisor === 0) {
         if (dividend > divisor)
@@ -25,12 +27,18 @@ function findHCF(n1, n2) {
         }
     }
 
-    console.log("The HCF of " + n1 + " and " + n2 + " is ", +hcfValue);
+    if (operation === "LCM") {
+        return hcfValue;
+    } else {
+        console.log("The HCF of " + n1 + " and " + n2 + " is ", +hcfValue);
+    }
+
 }
 
-function findLCM(n1, n2) {
-    let divisors1 = [];
-    let divisors2 = [];
-
+function findLCM(n1, n2, operation) {
+    let hcfValue = findHCF(n1, n2, operation);
+    let lcmValue;
     
+    lcmValue = (n1 * n2) / hcfValue;
+    console.log("The LCM of " + n1 + " and " + n2 + " equals ", lcmValue);
 }
