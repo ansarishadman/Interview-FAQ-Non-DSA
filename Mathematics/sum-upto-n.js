@@ -4,6 +4,7 @@ findSum(10);
 function findSum(n) {
     if (n === undefined) {
         console.log('Please enter a number!');
+        return;
     }
 
     let c = 1;

@@ -3,6 +3,7 @@ countAllDivisors(36);
 function countAllDivisors(n) {
     if (n === undefined) {
         console.log("Please enter a number!");
+        return;
     }
 
     let divisorsArr = [];

@@ -4,6 +4,7 @@ findFibonacciRecurring(1000);
 function findFibonacciNonRecurring(n) {
     if (n === undefined) {
         console.log("Please enter a number!");
+        return;
     }
 
     let fibonacciArr = [];

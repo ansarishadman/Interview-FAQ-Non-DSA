@@ -3,6 +3,7 @@ findNthFibonacci(15);
 function findNthFibonacci(n) {
     if (n === undefined) {
         console.log('Please enter a number!');
+        return;
     }
 
     if (n === 0 || n === 1) {
