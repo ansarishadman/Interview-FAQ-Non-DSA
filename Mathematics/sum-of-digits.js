@@ -21,15 +21,11 @@ function sumOfDigitsRecur(n) {
         return;
     }
     let sum = 0;
-    let sumValue = findSum(n, sum);
-    console.log("Sum of digits is => ", sumValue);
+    findSum(n, sum);
 }
 
 function findSum(n, sum) {
     sum = sum + n % 10;
     n = parseInt(n / 10);
-    if (n > 0){
-        findSum(n, sum);
-    }
-    return sum;
+    n > 0 ? findSum(n, sum) : console.log("Sum of digits (Recur) is => ", sum);
 }
