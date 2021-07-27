@@ -10,14 +10,14 @@ function checkSubsequence(strVal, subSeq) {
     }
 
     let strValArr = Object.assign([], strVal);
-    let subSeqVal = Object.assign([], subSeq);
+    let subSeqArr = Object.assign([], subSeq);
 
     let j = 0;
-    for (let i = 0; i < strVal.length && j < subSeqVal.length; i++) {
-        if (strVal[i] === subSeqVal[j])
+    for (let i = 0; i < strValArr.length && j < subSeqArr.length; i++) {
+        if (strValArr[i] === subSeqArr[j])
             j++;
     }
-    if (j === subSeqVal.length)  {
+    if (j === subSeqArr.length)  {
         console.log('Subsequence exists!');
     } else {
         console.log('Subsequence does not exist!');
