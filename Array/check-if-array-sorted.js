@@ -18,3 +18,5 @@ function checkIfSortedArray(arr) {
   }
   console.log("Array is sorted!");
 }
+
+// Output => Array is sorted!
