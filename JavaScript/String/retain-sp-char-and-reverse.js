@@ -4,7 +4,6 @@ reverseString("Sh*a#dm+an");
 
 function reverseString(name) {
   let str = "";
-  let index = [];
   let n = name.length;
   // reverse string without special char
   for (let i = n - 1; i >= 0; i--) {
@@ -13,8 +12,6 @@ function reverseString(name) {
       (name[i] >= "a" && name[i] <= "z")
     ) {
       str += name[i];
-    } else {
-      index.push(i);
     }
   }
 
